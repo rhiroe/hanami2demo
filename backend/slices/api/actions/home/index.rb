@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-module Backend
+module API
   module Actions
     module Home
-      class Index < Backend::Action
+      class Index < API::Action
         def handle(*, res)
           res.body = "Hello from Hanami"
         end

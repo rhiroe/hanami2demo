@@ -2,6 +2,8 @@
 
 module Backend
   class Routes < Hanami::Routes
-    root to: "home.index"
+    slice :api, at: "/api" do
+      root to: "home.index"
+    end
   end
 end
