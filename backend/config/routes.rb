@@ -2,6 +2,6 @@
 
 module Backend
   class Routes < Hanami::Routes
-    root { "Hello from Hanami" }
+    root to: "home.index"
   end
 end
